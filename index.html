@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Portfolio</title>
+    <style>
+        body{
+            margin: auto;
+            text-align: center;
+        }
+       
+        header{
+            color:aqua ;
+            background-color: black;
+            padding: 10px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333;
+            padding: 18px;
+        }
+        nav a{
+            color: white;
+            font-size: larger;
+            text-decoration: none;
+        
+        }
+        nav select{
+            display: none;
+        }
+        section{
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 20px;
+            background-color:rgb(222, 250, 168);
+             }
+        img{
+            width: 100px;
+            height: 80px;
+            border-radius: 10px;
+           }
+        p{
+          font-size: larger;
+          text-align: center;
+          padding: 10px;
+        }
+        @media all and (max-width: 768px) {
+        nav a {
+          display: none;
+        }
+        nav select{
+            display: inline-block;
+          width: 100%;
+          padding: 15px;
+          appearance: none;
+          border-radius: 5px;
+          background-color: #404548;
+          font-size: 16px;
+          color: white;            
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 20px;
+            background-color:rgb(222, 250, 168);
+        }
+        img{
+            max-width: 100%;
+            height: 60px;
+            border-radius: 10px;
+           }
+        }
+    </style>
+</head>
+<body>
+    <header><h1>My Portfolio</h1></header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact Me</a>
+        <select>
+            <option href="#home">Home</option>
+            <option href="#education">Education</option>
+            <option href="#projects">Projects</option>
+            <option href="#skills">Skills</option>
+            <option href="#contact">Contact Me</option>
+        </select>
+    </nav>
+    <section id="home">
+        <div>
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3Br3pn5NlngGl8q1a4BFTa0jGIglputb4koAKJfyqdOhxBjRb" alt="">
+        </div>
+        <div>
+            <h2 style="color: #61ba65">Home</h2>
+            <p>This is a dummy description for the Home section. 
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </div>
+    </section>
+    <section id="education">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp5cJK_Ky2WlYP7Tg4tUegZ5KPk_GowhrkBm3YaBT82uyuvLey" alt="">
+        </div>
+        <div>
+            <h2 style="color: #eb3372">Education</h2>
+            <p>This is a dummy description for the Education section. 
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </div>
+    </section>
+    <section id="projects">
+        <div>
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYts0l5kWiJTZFm-5j73s1tklC7x-U-II9x2fKOW6bP79BBAl2" alt="">
+        </div>
+        <div>
+            <h2 style="color: #FFC006;">Projects</h2>
+            <p>This is a dummy description for the Projects section. 
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </div>
+    </section>
+    <section id="skills">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ37DY0886cKcr96BukB6oUUKGC2Rym9qFUMszKjxnw0Iaullbi" alt="">        </div>
+        <div>
+            <h2 style="color: #A538B7;">Skills</h2>
+            <p>This is a dummy description for the Skills section. 
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </div>
+    </section>
+    <section id="contact">
+        <div>
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuVntuz1NcJ5fSAFKILLO_JO9QkUc2Ea1THTsHrezsnD9TOSMh" alt="">
+        </div>
+        <div>
+            <h2 style="color: #2096F2;">Contact Me</h2>
+            <p>This is a dummy description for the Contact Mesection. 
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </div>
+    </section>
+</body>
+</html>
